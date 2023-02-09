@@ -8,7 +8,7 @@ cursor = cnxn.cursor()
 
 # login to robinhood
 totp = pyotp.TOTP("UZLHHA3Q2QXVZHNH").now()
-login = rh.login('dallinrima@gmail.com','Cougars123!', mfa_code = totp)
+login = rh.login('YOUR EMAIL','YOUR PASSWORD', mfa_code = totp)
 
 class crypto:
     def __init__(self, ticker):
