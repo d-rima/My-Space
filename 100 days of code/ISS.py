@@ -18,11 +18,11 @@ def send_alert():
     server.starttls()
     server.ehlo()
     
-    server.login('dallinrima@gmail.com', 'vssmrbtsppxqznxs')
+    server.login('email_address', 'auth_code')
     subject = 'ISS'
     body = "Look up! The ISS is above you now!"
     msg = f"subject: {subject}\n\n{body} "
-    server.sendmail('dallinrima@gmail.com', 'dallinrima@gmail.com', msg)
+    server.sendmail('email_address', 'email_address', msg)
 
     server.quit()
 
