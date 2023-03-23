@@ -9,10 +9,10 @@ sign_in_button = driver.find_element_by_xpath('/html/body/div[1]/header/nav/div/
 sign_in_button.click()
 
 username = driver.find_element_by_id("username")
-username.send_keys("dallinrima@gmail.com")
+username.send_keys("EMAIL ADDRESS")
 
 password = driver.find_element_by_id("password")
-password.send_keys("Cougars0414!")
+password.send_keys("PASSWORD")
 
 enter_button = driver.find_element_by_xpath('//*[@id="organic-div"]/form/div[3]/button')
 enter_button.click()
@@ -31,7 +31,7 @@ for listing in all_listings:
 
         phone = driver.find_element_by_class_name("fb-single-line-text__input")
         if phone.text == "":
-            phone.send_keys("3852169145")
+            phone.send_keys("PHONE NUMBER")
 
         now_button = driver.find_element_by_css_selector("footer button")
         if now_button.text == "Next":
