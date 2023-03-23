@@ -7,7 +7,7 @@ hour = today.hour
 minute = today.minute
 second = today.second
 time = f"{hour}:{minute}:{second}"
-TOKEN = "Bearer 83q29pwur8uaserupq"
+TOKEN = "Bearer TOKEN"
 
 EXCERCISE_ENDPOINT = "https://trackapi.nutritionix.com/v2/natural/exercise"
 APP_ID = "4bacb3c3"
