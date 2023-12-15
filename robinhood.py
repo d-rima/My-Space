@@ -7,7 +7,7 @@ cnxn = pyodbc.connect(Trusted_Connection='yes', driver = '{SQL Server}',server =
 cursor = cnxn.cursor()
 
 # login to robinhood
-totp = pyotp.TOTP("UZLHHA3Q2QXVZHNH").now()
+totp = pyotp.TOTP("SECRET").now()
 login = rh.login('YOUR EMAIL','YOUR PASSWORD', mfa_code = totp)
 
 class crypto:
